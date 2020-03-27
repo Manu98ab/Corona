@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/today.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Corona</title>
+    <meta name="description" content="All News about Coronavirus Wordlwide tracking the number of confirmed cases, recovered patients, and death toll by country due to the COVID 19 coronavirus. Other news like World news, Entertainment, sports.... ">
+    <meta name="keywords" content="Coronavirus, Coronavirus Cases, coronavirus news, coronavirus spring break, coronavirus update, COVID-19, COVIDIOT, Social Distancing, Spring Break, Spring Break 2020, Spring Break Miami, Spring Break Miami 2020, spring breakers, News, Trending, World">
+    <meta name="news_keywords" content="Coronavirus, Coronavirus Cases, coronavirus news, coronavirus spring break, coronavirus update, COVID-19, COVIDIOT, Social Distancing, Spring Break, Spring Break 2020, Spring Break Miami, Spring Break Miami 2020, spring breakers, News, Trending, World">
+    <meta property="article:tag" content="Coronavirus">
+    <meta property="article:tag" content="Coronavirus Cases">
+    <meta property="article:tag" content="coronavirus news">
+    <meta property="article:tag" content="coronavirus spring break">
+    <meta property="article:tag" content="coronavirus update">
+    <meta property="article:tag" content="COVID-19">
+    <meta property="article:tag" content="COVIDIOT">
+    <meta property="article:tag" content="Social Distancing">
+    <meta property="article:tag" content="Spring Break">
+    <meta property="article:tag" content="Spring Break 2020">
+    <meta property="article:tag" content="Spring Break Miami">
+    <meta property="article:tag" content="Spring Break Miami 2020">
+    <meta property="article:tag" content="spring breakers">
+    <meta property="article:tag" content="News">
+    <meta property="article:tag" content="Trending">
+    <meta property="article:tag" content="World">
+
+
+
+</head>
+
+<body >
+    <div class="" style="background-color: black;color:white;text-align: center;width:auto;">
+        <label style="font-size: 3vmax;">T
+            &nbsp;R &nbsp;E&nbsp;N&nbsp;D&nbsp;I&nbsp;N&nbsp;G&ensp;&ensp;
+            T&nbsp;O&nbsp;D&nbsp;A&nbsp;Y&ensp;!!!</label>
+    </div>
+    <!-- Navigation Bar -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav" style="width=auto" >
+
+        <a href='corona'><i class="active fas fa-biohazard"></i>&nbsp;Corona</a>
+        <a href="home"><i class="fa fa-globe"></i>&nbsp;World News</a>
+        <a href="entertainment"><i class="fa fa-film"></i>&nbsp;Entertainment</a>
+      <a href="sports" ><i class="fas fa-football-ball"></i>&nbsp;Sports</a>
+<!--      <a href="news" ><i class="fa fa-newspaper-o"></i>&nbsp;News</a>-->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        Menu <i class="fa fa-bars"></i>
+      </a>
+    </div>
+   {% block body %}
+
+    {% endblock %}
+
+
+    <script src="{% static 'js/today.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

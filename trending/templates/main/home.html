@@ -1,0 +1,38 @@
+{% extends 'preset/default.html' %}
+{% block body %}
+ <!-- List -->
+<div  style=" padding:1px">
+    <img src="https://tdem.texas.gov/wp-content/uploads/2020/03/Covid-Banner-1536x389.jpg"width=100%>
+    <table style="background-color:black;width:100%" >
+  <tr>
+  </tr>
+  <tr style="text-indent:5vw">
+    <td style="font-size:3vw;color:white"><strong>Total Cases&emsp;          </strong></td>
+    <td style="font-size:3vw;color:white"><strong>Deaths&emsp;              </strong></td>
+    <td style="font-size:3vw;color:white"><strong>Recovered&emsp;            </strong></td>
+  </tr>
+  {% for i in count%}
+  <tr style="text-indent:5vw">
+    <td style="font-size:3vw;color:white"><strong>{{i.Total_cases}}</strong></td>
+    <td style="font-size:3vw;color:red"><strong>{{i.Deaths}}</strong></td>
+    <td style="font-size:3vw;color:white"><strong>{{i.Recovered}}</strong></td>
+  </tr>
+        {%endfor%}
+</table>
+
+    </div>
+{% for i in home %}
+
+<picture style="display: flex; justify-content: center; " >
+ <img src={{i.image}} alt="No Image" style="max-width:100%; height:auto;">
+
+</picture>
+
+    <div class="container" style="max-width:50vmax;">
+        <h2><strong>{{i.headline}}</strong></h2>
+        <h6>{{i.channel}}&ensp;&ensp;<i class="fa fa-clock"></i>{{i.time}}</h6>
+        <p>{{i.content}}<a href="{{i.link}}">....Read more</a></p>
+
+    </div>
+{% endfor %}
+{% endblock %}
